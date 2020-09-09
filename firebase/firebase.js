@@ -1,4 +1,7 @@
-firebaseConfig = {
+
+import firebase from 'firebase';
+
+const firebaseConfig = {
     apiKey: "AIzaSyCtxKy6KRtN5a81aox7QGkIPFilNBluKGE",
     authDomain: "residual-6b31a.firebaseapp.com",
     databaseURL: "https://residual-6b31a.firebaseio.com",
@@ -9,3 +12,8 @@ firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  
+  const firebaseIP = firebase.initializeApp(firebaseConfig);
+
+  
+  export default firebaseIP;
