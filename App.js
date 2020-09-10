@@ -3,12 +3,10 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
+import Login from './components/pages/acess/Login';
 
-
+/*
 
 // importando os icons 
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -17,7 +15,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 //importando as paginas necessárias 
 import ForgotPass from './screens/Acesso/forgotPassScreen';
 import Home from './screens/home';
-import Login from './screens/Acesso/login';
+
 import Signup from './screens/Acesso/signup';
 import AddE from './screens/Estoque/AddE';
 import ListE from './screens/Estoque/ListE';
@@ -27,16 +25,16 @@ import Custos from './screens/Fluxo/Custos';
 import Loading from './Loading';
 import Profile from './screens/Profile';
 
-
+*/
 
 const Stack = createStackNavigator();
-
+/*
 const Drawer = createDrawerNavigator();
 
 const Tab = createMaterialTopTabNavigator();
 
 const Tab2 = createMaterialBottomTabNavigator();
-
+/*
 
 function  DrawerScreens(){
  
@@ -51,7 +49,7 @@ function  DrawerScreens(){
     </Drawer.Navigator>
   );
 }
-
+/*
 // botoes de navegação fluxo de caixa 
 function TabScreensE() {
  
@@ -77,7 +75,7 @@ function TabScreensE() {
      </Tab2.Navigator> 
   );
 }
-
+/*
 // botoes de navegação fluxo de caixa
 function TabScreensM() {
   return(
@@ -93,21 +91,23 @@ function TabScreensM() {
 
     </Tab.Navigator>
   );
-}
+}<Stack.Screen name='signup'component={Signup} options={{headerShown: false}} />
+           <Stack.Screen name='Forgot'component={ForgotPass} options={{headerShown: false}} />
+          <Stack.Screen name='Home'component={DrawerScreens} options={{headerShown: false}} />
+          <Stack.Screen name='Adicionar Produtos'component={AddE} />
+          <Stack.Screen name='Profile'component={Profile}  options={{headerShown: false}}/>*/
 
 //Navegação entre login e home
 function App(){
   return(
     <NavigationContainer>
       <Stack.Navigator>
-         <Stack.Screen name='Loading' component={Loading}  options={{headerShown: false}} /> 
+        
           <Stack.Screen name='Login' component={Login}  options={{headerShown: false}} />
-          <Stack.Screen name='signup'component={Signup} options={{headerShown: false}} />
-           <Stack.Screen name='Forgot'component={ForgotPass} options={{headerShown: false}} />
-          <Stack.Screen name='Home'component={DrawerScreens} options={{headerShown: false}} />
-          <Stack.Screen name='Adicionar Produtos'component={AddE} />
-          <Stack.Screen name='Profile'component={Profile}  options={{headerShown: false}}/>
+         
         </Stack.Navigator>
     </NavigationContainer>
   );
 }export default App;
+
+

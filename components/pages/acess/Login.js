@@ -74,7 +74,7 @@ const Login = ({navigation})  =>{
   };
 
   const handleRegister = () => {
-    navigation.navigate('signup')
+    navigation.navigate('SignUp')
   };
 
   const Forgot = () => {
