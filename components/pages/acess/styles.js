@@ -117,13 +117,13 @@ const styles = StyleSheet.create({
 
   meioform:{
     width:'100%',
-    backgroundColor:'#fff',
+    backgroundColor:'#F0F8E9',
     alignItems:'center',
  },
 
 
   input:{
-    backgroundColor:"#ffffff",
+    backgroundColor:"#333",
     width:"70%",
     marginBottom: 15,
     color:"#222",
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
   },
 
   registroText:{
-    color:"#fff",
+    color:"#335D5C",
     fontSize:15,
   },
 
