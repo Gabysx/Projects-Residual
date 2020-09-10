@@ -84,17 +84,13 @@ const Login = ({navigation})  =>{
   return (
 
     <KeyboardAvoidingView style={styles.container}>
-     <StatusBar backgroundColor="#6959CD" barStyle="light-content"  /> 
-      <View
-        style={styles.topocontainer} >
-    
-      </View>
+     <StatusBar backgroundColor="#333" barStyle="light-content"  /> 
         
        <View style={styles.meio}>
          <ScrollView
            showsVerticalScrollIndicator = {false}>
-          <Text style={styles.Text}> Controle financeiro, </Text>
-          <Text style={styles.Text3}> sua escolha inteligente </Text>
+          <Text style={styles.Text}> Abrace o Mundo </Text>
+          <Text style={styles.Text3}> com ResiDual </Text>
           <View style={styles.formulario}>
               
               <View>
@@ -138,8 +134,9 @@ const Login = ({navigation})  =>{
                   autoCompleteType ={'password'}
                 />
                  </View>
-
-              <Btn label = 'Acessar'  onPress={handleLogin}  />
+              <TouchableOpacity style={styles.btnRegistro} onPress={handleLogin}>
+                <Text style={styles.registroText}> Acessar </Text>
+              </TouchableOpacity>
 
             <TouchableOpacity style={[styles.btnRegistro,{paddingTop:'10%',}]} onPress={Forgot}>
               <Text style={styles.registroTextES}> <Text>  <FontAwesome5  name={'unlock-alt'} size={15} > </FontAwesome5> </Text>  Esqueceu a senha  </Text>
@@ -153,7 +150,7 @@ const Login = ({navigation})  =>{
             <Text style={styles.registroText2}> Torne-se um membro ! </Text>
              
             <TouchableOpacity style={styles.btnRegistro} onPress={handleRegister}>
-              <Text style={styles.registroText}>Criar uma conta </Text>
+              <Text style={styles.registroText}>Sign Up </Text>
             </TouchableOpacity>
           
           </View>
