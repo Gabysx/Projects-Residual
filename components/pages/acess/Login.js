@@ -74,11 +74,11 @@ const Login = ({navigation})  =>{
   };
 
   const handleRegister = () => {
-    navigation.navigate('SignUp')
+    
   };
 
   const Forgot = () => {
-    navigation.navigate('Forgot')
+    
   };
 
   return (
